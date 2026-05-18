@@ -1,0 +1,34 @@
+<h2 style="color: blue;">Directives</h2>
+<h3>Attribute Directives: (Costume Changes)</h3>
+<h4>ngClass and ngStyle</h4>
+
+<!-- Changing classes conitionally -->
+ <button [ngClass]="{ 'btn-success': isAvailable, 'btn-disabled': !isAvailable }">
+  Buy Now
+</button>
+
+<!-- Changing styles directly -->
+<p [ngStyle]="{ 'color': isUrgent ? 'red' : 'black' }">
+  This is a reminder.
+</p>
+
+<h4>Custom example highlight.directive.ts:</h4>
+<p appHighlightDirective>Hover over me to see the magic!</p>
+
+<h3> Structural Directives (The Stage Managers)</h3>
+<p>add/remove or repeat HTML elements using star (*) rule </p>
+<p>*ngIF: </p>
+<p>isLoggedIn - {{isLoggedIn}} , using string interpolation</p>
+<div *ngIf="isLoggedIn ; else NoJackie">
+  <h4>Welcome back! Jackie</h4>
+</div>
+<!-- if above condition is false this executes -->
+<ng-template #NoJackie>
+  <h4>No Jackie chan is available.</h4>
+</ng-template>
+<p>*ngFor:</p>
+<!-- Loops through data, spawning a new <li> element for every item -->
+<ul>
+  <li *ngFor="let item of actors">{{ item }}</li>
+</ul>
+
