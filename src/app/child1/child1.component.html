@@ -1,0 +1,25 @@
+<p>-----------------child1 works!----------------------</p>
+
+<p display="inline">Child name came from Parent Component using property binding:   
+    Parent variable =>
+Property Binding => 
+@Input() => 
+Child receives data
+</p>
+<p>
+Child Name: {{ childName }}
+</p>
+<p>--------------------------------------------------------</p>
+<p>Local Reference Variable : direct access for html elements,angular components,directives inside template.</p>
+<p>Example 1 : HTML element access</p>
+<input type="text" #txt>
+
+<button (click)="show(txt.value)">
+  Click here & See in Console
+</button>
+
+<p>Example 2 : Component reference</p>
+<app-child2 #child2Ref></app-child2>
+<button (click)="child2Ref.test()">
+    Call Child2 test() & See in Console
+</button>

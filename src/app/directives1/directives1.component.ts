@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Directives1Component {
 
-  isAvailable: boolean = true;//stock
+  isAvailable: boolean = false;//stock
 
   isUrgent: boolean = true;//reminder
   

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular16-app';
+
+  btnDirectives: boolean = true;
+
+  btnComponentCommunication: boolean = true;
+  
 }

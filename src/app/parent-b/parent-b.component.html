@@ -1,0 +1,7 @@
+<hr>
+<h4>Child -> Parent </h4>
+
+<p>
+Child Button Click => EventEmitter.emit() => @Output() => Parent receives event
+</p>
+<app-child-b (msgEvent)="recieveMsg($event)"></app-child-b>

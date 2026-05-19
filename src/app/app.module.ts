@@ -5,12 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Directives1Component } from './directives1/directives1.component';
 import { HighlightDirectiveDirective } from './highlight-directive.directive';
+import { Parent1Component } from './parent1/parent1.component';
+import { Child1Component } from './child1/child1.component';
+import { Child2Component } from './child2/child2.component';
+import { ParentBComponent } from './parent-b/parent-b.component';
+import { ChildBComponent } from './child-b/child-b.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Directives1Component,
-    HighlightDirectiveDirective
+    HighlightDirectiveDirective,
+    Parent1Component,
+    Child1Component,
+    Child2Component,
+    ParentBComponent,
+    ChildBComponent
   ],
   imports: [
     BrowserModule,

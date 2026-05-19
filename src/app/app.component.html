@@ -1,20 +1,19 @@
 <h1>hello Angular 16
 </h1>
 <hr>
-<app-directives1></app-directives1>
+<button (click)="btnDirectives = !btnDirectives" [ngStyle]="{color : btnDirectives ? 'blue' : 'red'}">See Directives</button> | 
+<button (click)="btnComponentCommunication = !btnComponentCommunication" [ngStyle]="{color : btnComponentCommunication ? 'blue' : 'red'}">See Component Communication</button> | 
 <hr>
+<div *ngIf="btnDirectives">
+   <app-directives1></app-directives1>
+</div>
 
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, laboriosam molestias labore odit sequi earum quas in at, quo dicta unde tempore itaque ducimus dignissimos corporis, facere assumenda atque eveniet!lorem</p>
+<hr>
+<hr>
+<div *ngIf="btnComponentCommunication">
+    <app-parent1></app-parent1>
+    <app-parent-b></app-parent-b>
+</div>
+<hr><hr>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque explicabo iure minus ab voluptate blanditiis inventore nobis dignissimos? Minus esse soluta dolor officia a consequuntur, voluptatibus sed eos dignissimos?</p>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi dolor expedita, pariatur quam totam tenetur qui aliquid autem. Quaerat in ab ullam asperiores culpa dolorum. Eaque quibusdam nisi a doloremque?</p>
