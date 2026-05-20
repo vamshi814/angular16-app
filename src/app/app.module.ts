@@ -13,6 +13,8 @@ import { ChildBComponent } from './child-b/child-b.component';
 import { FormsModule } from '@angular/forms';
 import { ParentCComponent } from './parent-c/parent-c.component';
 import { ChildCComponent } from './child-c/child-c.component';
+import { ParentDComponent } from './parent-d/parent-d.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ChildCComponent } from './child-c/child-c.component';
     ParentBComponent,
     ChildBComponent,
     ParentCComponent,
-    ChildCComponent
+    ChildCComponent,
+    ParentDComponent,
+  
   ],
   imports: [
     FormsModule,
