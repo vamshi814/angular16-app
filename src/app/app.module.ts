@@ -10,6 +10,7 @@ import { Child1Component } from './child1/child1.component';
 import { Child2Component } from './child2/child2.component';
 import { ParentBComponent } from './parent-b/parent-b.component';
 import { ChildBComponent } from './child-b/child-b.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ChildBComponent } from './child-b/child-b.component';
     ChildBComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule
   ],

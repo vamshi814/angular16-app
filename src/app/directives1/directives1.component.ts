@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-directives1',
   templateUrl: './directives1.component.html',
@@ -11,8 +11,14 @@ export class Directives1Component {
 
   isUrgent: boolean = true;//reminder
   
+  supermanName: string = "Clark Kent";//ngModel
+  // ngmodelchange event - triggered when input value changes.
+  typing(value: string) {
+    console.log("Current input: ", value);
+  }
   isLoggedIn: boolean = true;//login/logout
 
+  
   actors:string[]=['Bruce Lee','Jackie Chan', 'Jet Li', 'Yuen Wo Ping'];//array of actors
   // actors: string[] = ['Leonardo DiCaprio', 'Brad Pitt', 'Johnny Depp', 'Tom Cruise', 'Will Smith'];
 }

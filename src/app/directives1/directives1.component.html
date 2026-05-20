@@ -11,7 +11,10 @@
 <p [ngStyle]="{ 'color': isUrgent ? 'red' : 'black' }">
   This is a reminder.
 </p>
-
+<h4>ngModel</h4>
+<p>ngModel is an Angular directive that creates two-way data binding between an HTML form elements (such as < input>, < select>, or < textarea>) and your TypeScript component property. It instantly synchronizes data : </p>
+<input type="text" [(ngModel)]="supermanName" placeholder="Enter Superman name" (ngModelChange)="typing($event)">
+<p>{{ supermanName }}</p>
 <h4>Custom example highlight.directive.ts:</h4>
 <p appHighlightDirective>Hover over me to see the magic!</p>
 
