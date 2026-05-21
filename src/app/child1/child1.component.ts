@@ -12,7 +12,5 @@ export class Child1Component {
 // for local ref variale purpose-----
   show(data: string) {
   console.log(data);
-
-  
-}
+  }
 }
